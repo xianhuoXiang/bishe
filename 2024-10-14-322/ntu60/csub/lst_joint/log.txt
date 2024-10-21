@@ -1,0 +1,74 @@
+[ Mon Oct 14 13:59:40 2024 ] using warm up, epoch: 5
+[ Mon Oct 14 13:59:45 2024 ] Parameters:
+{'work_dir': 'work_dir/ntu60/csub/lst_joint', 'model_saved_name': 'work_dir/ntu60/csub/lst_joint/runs', 'config': 'config/nturgbd-cross-subject/lst_joint.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ntu.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}, 'test_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': False, 'debug': False}, 'model': 'model.ctrgcn.Model_lst_4part', 'model_args': {'num_class': 60, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'k': 8, 'head': ['ViT-B/32'], 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [90, 100], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 200, 'test_batch_size': 200, 'start_epoch': 0, 'num_epoch': 110, 'weight_decay': 0.0005, 'lr_decay_rate': 0.1, 'warm_up_epoch': 5, 'loss_alpha': 0.8, 'te_lr_ratio': 1}
+
+[ Mon Oct 14 13:59:45 2024 ] # Parameters: 2104597
+[ Mon Oct 14 13:59:45 2024 ] Training epoch: 1
+[ Mon Oct 14 14:04:42 2024 ] using warm up, epoch: 5
+[ Mon Oct 14 14:04:46 2024 ] Parameters:
+{'work_dir': 'work_dir/ntu60/csub/lst_joint', 'model_saved_name': 'work_dir/ntu60/csub/lst_joint/runs', 'config': 'config/nturgbd-cross-subject/lst_joint.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ntu.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}, 'test_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': False, 'debug': False}, 'model': 'model.ctrgcn.Model_lst_4part', 'model_args': {'num_class': 60, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'k': 8, 'head': ['ViT-B/32'], 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [90, 100], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 150, 'test_batch_size': 150, 'start_epoch': 0, 'num_epoch': 110, 'weight_decay': 0.0005, 'lr_decay_rate': 0.1, 'warm_up_epoch': 5, 'loss_alpha': 0.8, 'te_lr_ratio': 1}
+
+[ Mon Oct 14 14:04:46 2024 ] # Parameters: 2104597
+[ Mon Oct 14 14:04:46 2024 ] Training epoch: 1
+[ Mon Oct 14 14:05:32 2024 ] using warm up, epoch: 5
+[ Mon Oct 14 14:05:36 2024 ] Parameters:
+{'work_dir': 'work_dir/ntu60/csub/lst_joint', 'model_saved_name': 'work_dir/ntu60/csub/lst_joint/runs', 'config': 'config/nturgbd-cross-subject/lst_joint.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ntu.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}, 'test_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': False, 'debug': False}, 'model': 'model.ctrgcn.Model_lst_4part', 'model_args': {'num_class': 60, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'k': 8, 'head': ['ViT-B/32'], 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [90, 100], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 100, 'test_batch_size': 100, 'start_epoch': 0, 'num_epoch': 110, 'weight_decay': 0.0005, 'lr_decay_rate': 0.1, 'warm_up_epoch': 5, 'loss_alpha': 0.8, 'te_lr_ratio': 1}
+
+[ Mon Oct 14 14:05:36 2024 ] # Parameters: 2104597
+[ Mon Oct 14 14:05:36 2024 ] Training epoch: 1
+[ Mon Oct 14 14:12:05 2024 ] using warm up, epoch: 5
+[ Mon Oct 14 14:12:09 2024 ] Parameters:
+{'work_dir': 'work_dir/ntu60/csub/lst_joint', 'model_saved_name': 'work_dir/ntu60/csub/lst_joint/runs', 'config': 'config/nturgbd-cross-subject/lst_joint.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ntu.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}, 'test_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': False, 'debug': False}, 'model': 'model.ctrgcn.Model_lst_4part', 'model_args': {'num_class': 60, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'k': 8, 'head': ['ViT-B/32'], 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [90, 100], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 50, 'test_batch_size': 50, 'start_epoch': 0, 'num_epoch': 110, 'weight_decay': 0.0005, 'lr_decay_rate': 0.1, 'warm_up_epoch': 5, 'loss_alpha': 0.8, 'te_lr_ratio': 1}
+
+[ Mon Oct 14 14:12:09 2024 ] # Parameters: 2104597
+[ Mon Oct 14 14:12:09 2024 ] Training epoch: 1
+[ Mon Oct 14 14:13:43 2024 ] using warm up, epoch: 5
+[ Mon Oct 14 14:13:48 2024 ] Parameters:
+{'work_dir': 'work_dir/ntu60/csub/lst_joint', 'model_saved_name': 'work_dir/ntu60/csub/lst_joint/runs', 'config': 'config/nturgbd-cross-subject/lst_joint.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ntu.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}, 'test_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': False, 'debug': False}, 'model': 'model.ctrgcn.Model_lst_4part', 'model_args': {'num_class': 60, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'k': 8, 'head': ['ViT-B/32'], 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [90, 100], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 25, 'test_batch_size': 25, 'start_epoch': 0, 'num_epoch': 110, 'weight_decay': 0.0005, 'lr_decay_rate': 0.1, 'warm_up_epoch': 5, 'loss_alpha': 0.8, 'te_lr_ratio': 1}
+
+[ Mon Oct 14 14:13:48 2024 ] # Parameters: 2104597
+[ Mon Oct 14 14:13:48 2024 ] Training epoch: 1
+[ Mon Oct 14 14:22:29 2024 ] 	Mean training loss: 3.6963.  Mean training acc: 35.17%.
+[ Mon Oct 14 14:22:29 2024 ] 	Time consumption: [Data]01%, [Network]99%
+[ Mon Oct 14 14:22:29 2024 ] Eval epoch: 1
+[ Mon Oct 14 14:23:08 2024 ] 	Mean test loss of 660 batches: 1.4216483488227383.
+[ Mon Oct 14 14:23:08 2024 ] 	Top1: 58.56%
+[ Mon Oct 14 14:23:08 2024 ] 	Top5: 88.88%
+[ Mon Oct 14 14:23:08 2024 ] Training epoch: 2
+[ Mon Oct 14 14:31:51 2024 ] 	Mean training loss: 2.2076.  Mean training acc: 55.41%.
+[ Mon Oct 14 14:31:51 2024 ] 	Time consumption: [Data]01%, [Network]99%
+[ Mon Oct 14 14:31:51 2024 ] Eval epoch: 2
+[ Mon Oct 14 14:32:30 2024 ] 	Mean test loss of 660 batches: 1.2862098495165506.
+[ Mon Oct 14 14:32:30 2024 ] 	Top1: 60.87%
+[ Mon Oct 14 14:32:30 2024 ] 	Top5: 91.25%
+[ Mon Oct 14 14:32:30 2024 ] Training epoch: 3
+[ Mon Oct 14 14:41:15 2024 ] 	Mean training loss: 1.8066.  Mean training acc: 62.69%.
+[ Mon Oct 14 14:41:15 2024 ] 	Time consumption: [Data]01%, [Network]99%
+[ Mon Oct 14 14:41:15 2024 ] Eval epoch: 3
+[ Mon Oct 14 14:41:54 2024 ] 	Mean test loss of 660 batches: 1.3091265010337034.
+[ Mon Oct 14 14:41:54 2024 ] 	Top1: 63.60%
+[ Mon Oct 14 14:41:54 2024 ] 	Top5: 91.21%
+[ Mon Oct 14 14:41:54 2024 ] Training epoch: 4
+[ Mon Oct 14 14:50:42 2024 ] 	Mean training loss: 1.6940.  Mean training acc: 64.68%.
+[ Mon Oct 14 14:50:42 2024 ] 	Time consumption: [Data]01%, [Network]99%
+[ Mon Oct 14 14:50:42 2024 ] Eval epoch: 4
+[ Mon Oct 14 14:51:21 2024 ] 	Mean test loss of 660 batches: 1.165223061451406.
+[ Mon Oct 14 14:51:21 2024 ] 	Top1: 65.59%
+[ Mon Oct 14 14:51:21 2024 ] 	Top5: 92.96%
+[ Mon Oct 14 14:51:21 2024 ] Training epoch: 5
+[ Mon Oct 14 15:00:13 2024 ] 	Mean training loss: 1.6764.  Mean training acc: 64.95%.
+[ Mon Oct 14 15:00:13 2024 ] 	Time consumption: [Data]01%, [Network]99%
+[ Mon Oct 14 15:00:13 2024 ] Eval epoch: 5
+[ Mon Oct 14 15:00:52 2024 ] 	Mean test loss of 660 batches: 1.2480126857306018.
+[ Mon Oct 14 15:00:52 2024 ] 	Top1: 64.34%
+[ Mon Oct 14 15:00:53 2024 ] 	Top5: 92.13%
+[ Mon Oct 14 15:00:53 2024 ] Training epoch: 6
+[ Mon Oct 14 15:09:47 2024 ] 	Mean training loss: 1.5671.  Mean training acc: 67.15%.
+[ Mon Oct 14 15:09:47 2024 ] 	Time consumption: [Data]01%, [Network]99%
+[ Mon Oct 14 15:09:47 2024 ] Eval epoch: 6
+[ Mon Oct 14 15:11:08 2024 ] using warm up, epoch: 5
+[ Mon Oct 14 15:11:13 2024 ] Parameters:
+{'work_dir': 'work_dir/ntu60/csub/lst_joint', 'model_saved_name': 'work_dir/ntu60/csub/lst_joint/runs', 'config': 'config/nturgbd-cross-subject/lst_joint.yaml', 'phase': 'train', 'save_score': False, 'seed': 1, 'log_interval': 100, 'save_interval': 1, 'save_epoch': 30, 'eval_interval': 5, 'print_log': True, 'show_topk': [1, 5], 'feeder': 'feeders.feeder_ntu.Feeder', 'num_worker': 32, 'train_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 64, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}, 'test_feeder_args': {'data_path': 'data/ntu/NTU60_CS.npz', 'split': 'test', 'window_size': 64, 'p_interval': [0.95], 'vel': False, 'bone': False, 'debug': False}, 'model': 'model.ctrgcn.Model_lst_4part', 'model_args': {'num_class': 60, 'num_point': 25, 'num_person': 2, 'graph': 'graph.ntu_rgb_d.Graph', 'k': 8, 'head': ['ViT-B/32'], 'graph_args': {'labeling_mode': 'spatial'}}, 'weights': None, 'ignore_weights': [], 'base_lr': 0.1, 'step': [90, 100], 'device': [0], 'optimizer': 'SGD', 'nesterov': True, 'batch_size': 25, 'test_batch_size': 25, 'start_epoch': 0, 'num_epoch': 110, 'weight_decay': 0.0005, 'lr_decay_rate': 0.1, 'warm_up_epoch': 5, 'loss_alpha': 0.8, 'te_lr_ratio': 1}
+
+[ Mon Oct 14 15:11:13 2024 ] # Parameters: 2104597
+[ Mon Oct 14 15:11:13 2024 ] Training epoch: 1

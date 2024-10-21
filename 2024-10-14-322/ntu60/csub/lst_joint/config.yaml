@@ -1,0 +1,72 @@
+# command line: main_multipart_ntu.py --config config/nturgbd-cross-subject/lst_joint.yaml --model model.ctrgcn.Model_lst_4part --work-dir work_dir/ntu60/csub/lst_joint --device 0
+
+base_lr: 0.1
+batch_size: 25
+config: config/nturgbd-cross-subject/lst_joint.yaml
+device:
+- 0
+eval_interval: 5
+feeder: feeders.feeder_ntu.Feeder
+ignore_weights: []
+log_interval: 100
+loss_alpha: 0.8
+lr_decay_rate: 0.1
+model: model.ctrgcn.Model_lst_4part
+model_args:
+  graph: graph.ntu_rgb_d.Graph
+  graph_args:
+    labeling_mode: spatial
+  head:
+  - ViT-B/32
+  k: 8
+  num_class: 60
+  num_person: 2
+  num_point: 25
+model_saved_name: ''
+nesterov: true
+num_epoch: 110
+num_worker: 32
+optimizer: SGD
+phase: train
+print_log: true
+save_epoch: 30
+save_interval: 1
+save_score: false
+seed: 1
+show_topk:
+- 1
+- 5
+start_epoch: 0
+step:
+- 90
+- 100
+te_lr_ratio: 1
+test_batch_size: 25
+test_feeder_args:
+  bone: false
+  data_path: data/ntu/NTU60_CS.npz
+  debug: false
+  p_interval:
+  - 0.95
+  split: test
+  vel: false
+  window_size: 64
+train_feeder_args:
+  bone: false
+  data_path: data/ntu/NTU60_CS.npz
+  debug: false
+  normalization: false
+  p_interval:
+  - 0.5
+  - 1
+  random_choose: false
+  random_move: false
+  random_rot: true
+  random_shift: false
+  split: train
+  vel: false
+  window_size: 64
+warm_up_epoch: 5
+weight_decay: 0.0005
+weights: null
+work_dir: work_dir/ntu60/csub/lst_joint
